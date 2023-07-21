@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0"
+  },
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "pokedex to tell about pokemeno",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
