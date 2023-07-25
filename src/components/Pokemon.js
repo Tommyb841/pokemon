@@ -6,7 +6,7 @@ export default function Pokemon() {
   const [pokemon, setPokemon] = useState([]);
   const [pokeIndex, setPokeindex] = useState([]);
   const [currentPageUrl, setCurrentPageUrl] = useState(
-    `https://pokeapi.co/api/v2/pokemon`
+    `https://pokeapi.co/api/v2/pokemon?limit=151&offset=151`
   );
   const [nextPageUrl, setNextPageUrl] = useState();
   const [prevPageUrl, setPrevPageUrl] = useState();
@@ -40,7 +40,7 @@ export default function Pokemon() {
   return (
     <>
       <div>
-        <PokemonList className={poke} pokemon={pokemon} />
+        <PokemonList pokemon={pokemon} />
         <Pagination
           gotoNextPage={nextPageUrl ? gotoNextPage : null}
           gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
