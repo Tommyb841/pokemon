@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import Pokemon from "../components/Pokemon";
 import { Link } from "gatsby";
-import { PokeContext } from "./PokeContext";
-export default function PokemonInfo({ params }) {
-  const { pokeName, setPokeName } = useContext(PokeContext);
+export default function PokemonInfo(props) {
   return (
     <>
-      <Link to={`pokeinfo`}>
-        <button>info</button>
+      <Link to={`pokeinfo`} state={props.pokemon}>
+        <button>{props.pokemon}</button>
       </Link>
     </>
   );
