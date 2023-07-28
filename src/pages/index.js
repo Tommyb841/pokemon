@@ -17,9 +17,13 @@ export default function Index() {
       .then((res) => {
         setLoading(false);
         setPokemonList(
-          res.data.results.map((p) => {
+          res.data.results.map((p, idx) => {
             console.log("current pokemon: ", p);
-            return p.name;
+            let pokemon = {
+              id: idx + 1,
+              name: p.name,
+            };
+            return pokemon;
           })
         );
       });
