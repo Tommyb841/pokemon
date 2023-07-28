@@ -1,8 +1,8 @@
 import React from "react";
-import { PokeProvider } from "../context/PokeContext";
+import { PokeContextProvider } from "../context/PokeContext";
 
 const RootElement = ({ children }) => {
-  return <PokeProvider>{children}</PokeProvider>;
+  return <PokeContextProvider>{children}</PokeContextProvider>;
 };
 
 export default RootElement;
