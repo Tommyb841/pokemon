@@ -1,18 +1,18 @@
 import React from "react";
-import PokemonPics from "./PokemonPics";
-import PokemonInfo from "./PokemonInfo";
-import styles from "../styles/pokelist.module.css";
+// import PokemonPics from "./PokemonPics";
+// import PokemonInfo from "./PokemonInfo";
+import styles from "../styles/pokelist.css";
 
-export default function PokemonList({ pokemon }) {
+export default function PokemonList({ pokemonList }) {
   return (
     <>
       <div className={styles.p}>
-        {pokemon.map((p, idx) => (
+        {pokemonList.map((p, idx) => (
           <div>
             <ul>
-              <PokemonPics id={idx + 1} />
+              {/* <PokemonPics id={idx + 1} /> */}
               <br />
-              <PokemonInfo pokemon={[p]} />
+              {/* <PokemonInfo pokemon={[p]} /> */}
               {/* <Link to={`pokeinfo/${p}`}>
               <button key={idx + 1}>{p}</button>
             </Link> */}
