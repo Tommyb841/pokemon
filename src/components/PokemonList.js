@@ -1,18 +1,7 @@
-import React, { useContext, createContext, useState } from "react";
+import React from "react";
 import PokemonPics from "./PokemonPics";
 import PokemonInfo from "./PokemonInfo";
-import { Link } from "gatsby";
 
-const PokeContext = createContext();
-const PokeContextProvider = ({ children }) => {
-  const [pokeName, setPokeName] = useState("");
-
-  return (
-    <PokeContext.Provider value={{ pokeName, setPokeName }}>
-      {children}
-    </PokeContext.Provider>
-  );
-};
 export default function PokemonList({ pokemon }) {
   return (
     <>
@@ -32,5 +21,3 @@ export default function PokemonList({ pokemon }) {
     </>
   );
 }
-
-export { PokeContext, PokeContextProvider };
