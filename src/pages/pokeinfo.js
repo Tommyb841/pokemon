@@ -1,12 +1,15 @@
 import React from "react";
-import PokemonInfo from "../components/PokemonInfo";
-
+import "../styles/pokeInfo.css";
 export default function PokeInfo(props) {
+  const id = props.location.state.id;
+  const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
   console.log("props from pokeinfo: ", props);
   return (
     <>
-      <h1>this is the info page</h1>
-      {/* <h2>{props.pokemon}</h2> */}
+      <div className="container">
+        <h1> {props.location.state.name}</h1>
+        <img style={{ width: "100px", height: "100px" }} src={url} alt="" />
+      </div>
     </>
   );
 }
