@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 4vw;
+}
+.container h1 {
+  text-transform: capitalize;
+}
+
+.pokemon-image {
+  width: 30vw;
+  height: 30vw;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .container {
+    font-size: 2em;
+  }
+
+  .pokemon-image {
+    width: 200px;
+    height: 200px;
+  }
+}

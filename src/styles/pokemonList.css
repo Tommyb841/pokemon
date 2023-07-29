@@ -1,0 +1,44 @@
+/* Center everything in the body or parent container */
+body {
+  /* Apply a red to blue gradient background to the entire page */
+  background: linear-gradient(
+    to bottom,
+    red,
+    blue
+  ); /* Gradient from top (red) to bottom (blue) */
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 100%; /* Ensure it takes the full width */
+}
+
+h1 {
+  font-size: 3em; /* Make the text big */
+  background: linear-gradient(
+    to right,
+    yellow,
+    orange
+  ); /* Apply a yellow to orange gradient */
+  -webkit-background-clip: text;
+  color: transparent; /* This will make the gradient visible as the text color */
+  margin-bottom: 20px; /* Add some space below the h1 */
+}
+
+.List-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  width: 80%; /* Adjust as needed */
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,33 @@
+.pokemon-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  border-radius: 50%; /* Make the container round */
+  overflow: hidden; /* Hide any child content that goes outside the round container */
+  background-color: #fff; /* White background for each Pokemon item */
+  border: 2px solid white; /* White border for the round container */
+}
+
+.pokemon-container img {
+  width: 80%; /* Adjust as needed */
+  margin-bottom: 10px; /* Space between the image and the button */
+}
+
+.pokemon-container a {
+  display: block;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 20px; /* Rounded corners for the button */
+  text-align: center;
+  text-decoration: none; /* Remove the default link underline */
+  color: black; /* Text color for the link */
+  border: 1px solid #ccc; /* Border for the button */
+  font-family: "Arial", sans-serif; /* Use a nice font, adjust as needed */
+  font-weight: bold; /* Make the font bold */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pokemon-container a:hover {
+  background-color: #f0f0f0; /* Slight gray background on hover for feedback */
+}
