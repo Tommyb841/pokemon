@@ -5,8 +5,10 @@
   padding: 20px;
   border-radius: 50%; /* Make the container round */
   overflow: hidden; /* Hide any child content that goes outside the round container */
-  background-color: #fff; /* White background for each Pokemon item */
-  border: 2px solid white; /* White border for the round container */
+  background-color: transparent; /* White background for each Pokemon item */
+  background-image: url("/static/images/pokeball_PNG33-1995688914");
+  background-size: cover;
+  background-position: center;
 }
 
 .pokemon-container img {
@@ -17,17 +19,25 @@
 .pokemon-container a {
   display: block;
   padding: 10px 20px;
-  background-color: white;
   border-radius: 20px; /* Rounded corners for the button */
   text-align: center;
   text-decoration: none; /* Remove the default link underline */
   color: black; /* Text color for the link */
-  border: 1px solid #ccc; /* Border for the button */
   font-family: "Arial", sans-serif; /* Use a nice font, adjust as needed */
   font-weight: bold; /* Make the font bold */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-transform: capitalize;
 }
-
-.pokemon-container a:hover {
-  background-color: #f0f0f0; /* Slight gray background on hover for feedback */
+.btn {
+  background-color: white;
+  color: #333; /* Dark text color for contrast against the white background */
+  padding: 12px 20px; /* Vertical and horizontal padding */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold font weight */
+  text-align: center;
+  text-decoration: none; /* Remove underline if applied to a link */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: all 0.3s ease;
 }
