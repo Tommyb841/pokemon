@@ -32,7 +32,7 @@ export default function Index() {
   if (loading) return "Loading... "
 
   return (
-    <div className="centered-container">
+    <div >
       <PokemonList pokemonList={pokemonList} />
     </div>
   )
