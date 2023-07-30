@@ -8,7 +8,7 @@ export default function PokeInfo(props) {
     <>
       <div className="container">
         <h1> {props.location.state.name}</h1>
-        <img style={{ width: "100px", height: "100px" }} src={url} alt="" />
+        <img className="img-bottom" src={url} alt="" />
       </div>
     </>
   );

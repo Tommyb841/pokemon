@@ -2,18 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100vh;
   font-size: 4vw;
 }
 .container h1 {
   text-transform: capitalize;
+  position: fixed;
 }
 
 .pokemon-image {
-  width: 30vw;
-  height: 30vw;
+  width: 200px;
+  height: 200px;
 }
+
+.img-bottom {
+  position: fixed; /* Set the image's position to absolute */
+  bottom: 75px; /* Position the image at the bottom of the container */
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  width: 280px; /* Or any desired width */
+  height: 280px; /* Maintain aspect ratio */
+}
+
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
