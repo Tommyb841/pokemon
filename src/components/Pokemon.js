@@ -7,9 +7,9 @@ export default function Pokemon({ pokemon }) {
   console.log("Pokemon inside poke component: ", pokemon)
   return (
     <div className="pokemon-container">
-      <img src={url} alt={pokemon.name} />
       <Link to={`/pokeinfo`} state={pokemon}>
-        <button>{pokemon.name}</button>
+        <img src={url} alt={pokemon.name} />
+        <button className="btn">{pokemon.name}</button>
       </Link>
     </div>
   )
