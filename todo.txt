@@ -1,0 +1,16 @@
+make a home page
+have hover effect from pokeball to show pokemon.
+make backgrounds depending on pokemon type
+fix list centering
+add music
+
+
+
+
+advanced
+get pokemon height and display based on size
+show evolutions
+add strapi
+use graphql
+add to project portfolio
+
