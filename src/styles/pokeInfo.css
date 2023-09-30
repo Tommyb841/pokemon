@@ -21,10 +21,9 @@
   bottom: 75px; /* Position the image at the bottom of the container */
   left: 50%; /* Center the image horizontally */
   transform: translateX(-50%); /* Adjust for true centering */
-  width: 280px; /* Or any desired width */
-  height: 280px; /* Maintain aspect ratio */
+  width: 420px; /* Or any desired width */
+  height: 500px; /* Maintain aspect ratio */
 }
-
 
 /* Media query for larger screens */
 @media (min-width: 768px) {

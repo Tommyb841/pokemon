@@ -3,23 +3,12 @@ body {
   background-image: url("/static/images/poke_background.jpg");
   background-repeat: no-repeat; /* This will prevent the image from repeating */
   background-size: cover; /* This will scale the image to cover the entire element */
-  background-position: center; /* This will center the image in the element */
-  height: 100vh; /* Adjust as needed, this example sets the height to the full viewport height */
-  width: 100vw;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  width: 100%; /* Ensure it takes the full width */
-}
-
 h1 {
   text-align: center;
   font-size: 3em; /* Make the text big */
@@ -35,7 +24,7 @@ h1 {
 
 .List-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   width: 80%; /* Adjust as needed */
 }

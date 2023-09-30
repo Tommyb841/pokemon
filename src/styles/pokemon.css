@@ -6,7 +6,7 @@
   border-radius: 50%; /* Make the container round */
   overflow: hidden; /* Hide any child content that goes outside the round container */
   background-color: transparent; /* White background for each Pokemon item */
-  background-image: url("/static/images/pokeball_PNG33-1995688914");
+  background-image: url("/static/images/pokeball.png");
   background-size: cover;
   background-position: center;
 }
@@ -40,4 +40,7 @@
   text-decoration: none; /* Remove underline if applied to a link */
   cursor: pointer; /* Hand cursor on hover */
   transition: all 0.3s ease;
+}
+h2 {
+  text-align: center;
 }
